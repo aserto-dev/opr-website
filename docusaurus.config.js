@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'Open Policy Registry',
-  tagline: 'A Docker-inspired workflow for OPA policies',
+  tagline: 'A free registry for Open Policy Containers',
   url: 'https://openpolicyregistry.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -75,8 +75,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       navbar: {
         style: 'dark',
         logo: {
-          alt: 'OPCR Logo',
-          src: 'img/logo.png',
+          alt: 'OPR Logo',
+          src: 'img/Lottie-200.svg',
         },
         items: [
           {
@@ -86,11 +86,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/docs/cli/download', label: 'Get the CLI', position: 'left'},
           {
-            href: 'https://github.com/opcr-io/policy',
-            label: 'GitHub',
-            position: 'left',
+            href: 'https://www.openpolicycontainers.com/docs/cli/download',
+            label: 'Get the CLI',
+            position: 'left'
           },
           {
             to: 'https://console.openpolicyregistry.io',
@@ -125,10 +124,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/openpolicyreg',
-              },
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/open-policy-registry',
               },
             ],
           },
