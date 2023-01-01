@@ -11,8 +11,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'opcr-io',
-  projectName: 'opcr-website',
+  organizationName: 'aserto-dev',
+  projectName: 'opr-website',
 
   plugins: [
     ['docusaurus2-dotenv',
@@ -62,11 +62,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      algolia: {
-        apiKey: process.env.REACT_APP_ALGOLIA_API_KEY || '_',
-        indexName: process.env.REACT_APP_ALGOLIA_INDEX_NAME || '_',
-        appId: process.env.REACT_APP_ALGOLIA_APP_ID,
-      },
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
@@ -90,12 +85,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             href: 'https://www.openpolicycontainers.com/docs/cli/download',
             label: 'Get the CLI',
             position: 'left'
-          },
-          {
-            to: 'https://console.openpolicyregistry.io',
-            label: 'Sign in',
-            position: 'right',
-            target: "_self",
           },
         ],
       },

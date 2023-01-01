@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 const Svg = require('../../static/img/Lottie-200.svg').default;
+import FlexBanner from 'flex-banner';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -14,23 +15,16 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <Svg className={styles.heroSvg} alt={siteConfig.title} />
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg margin-horiz--md"
-            to="/docs/opcr/create-account">
-            Create account
-          </Link>
-        </div>
-        <br/>
         <br/>
         <center>
         <p className={clsx('hero__subtitle', styles.bodyText)}>
-          Push and pull policy images created using the&nbsp;
-          <Link to="https://github.com/opcr-io/policy"><code>policy</code></Link>&nbsp;
-          CLI&nbsp;
-          from the&nbsp;
-          <Link to="https://www.openpolicycontainers.com">Open Policy Containers</Link>&nbsp;
-          project.
+          ⭐️ &nbsp;<Link to="https://www.openpolicycontainers.com">Open Policy Containers</Link>&nbsp;
+          is now a CNCF sandbox project! ⭐️
+          <br />
+          <br />
+          With many OCI registry options available, Open Policy Registry is being retired on Jan 31 2023.&nbsp;
+          <Link to="/blog/goodbye-open-policy-registry-hello-open-policy-containers">Read more</Link>&nbsp;
+          on how to migrate.
         </p>
         </center>
       </div>
@@ -42,6 +36,16 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <>
+      <FlexBanner
+        title="Open Policy Registry is being retired on Jan 31, 2023"
+        ctaLink="https://openpolicyregistry.io/blog/goodbye-open-policy-registry-hello-open-policy-containers"
+        animationTime={0}
+        delayToShowBanner={0}
+        isCenter={true}
+        crossIconSize={20}
+        wrapperStyle={{ backgroundColor: '#215E60' }}
+        mainStyleTitle={{ textDecoration: "underline", fontSize: "1.2rem" }}
+      />
       <Layout
         title={`Welcome to ${siteConfig.title}`}
         description="A free registry for Open Policy Containers">
